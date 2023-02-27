@@ -9,7 +9,7 @@ WORKDIR /jar
 
 # ARG JAR_FILE= ./domain/build/libs/domain-1.0-SNAPSHOT.jar
 
-COPY ./demo/build/libs/demo-1.0-SNAPSHOT.jar boot.jar
+COPY ./domain/build/libs/domain-1.0-SNAPSHOT.jar boot.jar
 
 #해당 이미지를 컨테이너로 띄울 시 자동으로 자르파일이 실행되도록 명령
 ENTRYPOINT ["java","-jar","/jar/boot.jar"]
