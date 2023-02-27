@@ -35,7 +35,7 @@ subprojects {
         useJUnitPlatform()
     }
     bootJar{
-        mainClass.set('com.example.domain.DomaineApplication')
+        mainClass.set('com.example.domain.DomainApplication')
     }
 
 }
